@@ -1,0 +1,81 @@
+/* -------------------------------------
+-- Reset Styles
+*/
+
+medium-reader {
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+
+medium-reader p {
+  max-width: 540px;
+  text-align: center;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(0,0,0,0.8);
+  font-family: "medium-content-serif-font",Georgia,Cambria,"Times New Roman",Times,serif;
+}
+
+medium-reader span {
+  display: block;
+  margin: auto;
+  font-size: 1rem;
+  color: rgba(0,0,0,0.3);
+  letter-spacing: 0;
+  margin-top: 2rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+medium-reader input {
+  margin: 0 0 5rem;
+  width: 80%;
+  max-width: 720px;
+  align-self: center;
+}
+
+medium-reader .js-actionRecommend {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.postArticle--full .readingTime {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: rgba(0,0,0,0.15);
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #02b875;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(0,0,0,0.2);
+}
+
